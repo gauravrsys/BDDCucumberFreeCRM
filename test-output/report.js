@@ -1,16 +1,16 @@
-$(document).ready(function() {var formatter = new CucumberHTML.DOMFormatter($('.cucumber-report'));formatter.uri("/media/gaurav/BA92AE4892AE0949/Selenium/Online_Classes/Learning_Java/Module1/FreeCRMBDD2/src/main/java/feature/deals.feature");
+$(document).ready(function() {var formatter = new CucumberHTML.DOMFormatter($('.cucumber-report'));formatter.uri("/media/gaurav/BA92AE4892AE0949/Selenium/Online_Classes/Learning_Java/Module1/FreeCRMBDD2/src/main/java/feature/Tasks.feature");
 formatter.feature({
   "line": 1,
-  "name": "Deals",
+  "name": "Tasks",
   "description": "",
-  "id": "deals",
+  "id": "tasks",
   "keyword": "Feature"
 });
 formatter.scenario({
   "line": 2,
-  "name": "Verify add deal with valid inputs",
+  "name": "Verify add task with valid inputs",
   "description": "",
-  "id": "deals;verify-add-deal-with-valid-inputs",
+  "id": "tasks;verify-add-task-with-valid-inputs",
   "type": "scenario",
   "keyword": "Scenario"
 });
@@ -25,97 +25,127 @@ formatter.step({
   "rows": [
     {
       "cells": [
+        "username",
+        "password"
+      ],
+      "line": 6
+    },
+    {
+      "cells": [
         "gaurava",
         "test@123"
       ],
-      "line": 6
+      "line": 7
     }
   ],
-  "keyword": "When "
-});
-formatter.step({
-  "line": 7,
-  "name": "page navigates to home page",
-  "keyword": "Then "
-});
-formatter.step({
-  "line": 8,
-  "name": "user clicks on new deal menu",
   "keyword": "When "
 });
 formatter.step({
   "line": 9,
-  "name": "add deal form should get open",
+  "name": "page navigates to home page",
   "keyword": "Then "
 });
 formatter.step({
   "line": 10,
-  "name": "user enters details like title amount probability and commission And clicks on save button",
+  "name": "user clicks on new task menu",
+  "keyword": "When "
+});
+formatter.step({
+  "line": 11,
+  "name": "add task form should get open",
+  "keyword": "Then "
+});
+formatter.step({
+  "line": 12,
+  "name": "user enters details like title completion and selects status And clicks on save button",
   "rows": [
     {
       "cells": [
-        "test deal1",
-        "1000",
-        "40",
-        "20"
+        "title",
+        "completion",
+        "status"
       ],
-      "line": 11
+      "line": 13
+    },
+    {
+      "cells": [
+        "test task1",
+        "70",
+        "Open"
+      ],
+      "line": 14
+    },
+    {
+      "cells": [
+        "test task2",
+        "100",
+        "Complete"
+      ],
+      "line": 15
+    },
+    {
+      "cells": [
+        "test task3",
+        "50",
+        "Open"
+      ],
+      "line": 16
     }
   ],
   "keyword": "When "
 });
 formatter.step({
-  "line": 12,
-  "name": "new deal should get added",
+  "line": 17,
+  "name": "new task should get added",
   "keyword": "Then "
 });
 formatter.match({
-  "location": "deal.user_is_on_login_page()"
+  "location": "Tasks.user_is_on_login_page()"
 });
 formatter.result({
-  "duration": 18233154389,
+  "duration": 16247169876,
   "status": "passed"
 });
 formatter.match({
-  "location": "deal.enter_valid_username_and_password_And_click_on_submit_button(DataTable)"
+  "location": "Tasks.enter_valid_username_and_password_And_click_on_submit_button(DataTable)"
 });
 formatter.result({
-  "duration": 9908866048,
+  "duration": 6986318682,
   "status": "passed"
 });
 formatter.match({
-  "location": "deal.page_navigates_to_home_page()"
+  "location": "Tasks.page_navigates_to_home_page()"
 });
 formatter.result({
-  "duration": 33341563,
+  "duration": 16367542,
   "status": "passed"
 });
 formatter.match({
-  "location": "deal.user_clicks_on_new_deal_menu()"
+  "location": "Tasks.user_clicks_on_new_task_menu()"
 });
 formatter.result({
-  "duration": 4666467971,
+  "duration": 3912371417,
   "status": "passed"
 });
 formatter.match({
-  "location": "deal.add_deal_form_should_get_open()"
+  "location": "Tasks.add_task_form_should_get_open()"
 });
 formatter.result({
-  "duration": 186931211,
+  "duration": 139625300,
   "status": "passed"
 });
 formatter.match({
-  "location": "deal.user_enters_details_like_title_amount_probability_and_commission_And_clicks_on_save_button(DataTable)"
+  "location": "Tasks.user_enters_details_like_title_completion_and_selects_status_And_clicks_on_save_button(DataTable)"
 });
 formatter.result({
-  "duration": 3278300903,
+  "duration": 19435369043,
   "status": "passed"
 });
 formatter.match({
-  "location": "deal.new_deal_should_get_added()"
+  "location": "Tasks.new_task_should_get_added()"
 });
 formatter.result({
-  "duration": 277968058,
+  "duration": 1561448379,
   "status": "passed"
 });
 });
