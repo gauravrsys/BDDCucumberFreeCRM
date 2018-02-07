@@ -1,11 +1,62 @@
 package stepdefinition;
 
+import cucumber.api.java.After;
+import cucumber.api.java.Before;
 import cucumber.api.java.en.Given;
 import cucumber.api.java.en.Then;
 import cucumber.api.java.en.When;
 
 public class TagsConcept {
 
+	@Before(order=0)
+	public void setUp()
+	{
+		System.out.println("ABC");
+	}
+	
+	@After(order=0)
+	public void tearDown()
+	{
+		System.out.println("XYZ");
+	}
+	
+	@Before(order=1)
+	public void setUp1()
+	{
+		System.out.println("KLM");
+	}
+	
+	@After(order=1)
+	public void tearDown1()
+	{
+		System.out.println("RST");
+	}
+	
+	@Before("@FirstCase")
+	public void m1()
+	{
+		System.out.println("m1 start method");
+	}
+	
+	@After("@FirstCase")
+	public void m2()
+	{
+		System.out.println("m2 end method");
+	}
+	
+	@Before("@ThirdCase")
+	public void m3()
+	{
+		System.out.println("m3 method");
+	}
+	
+	@After("@ThirdCase")
+	public void m4()
+	{
+		System.out.println("m4 method");
+	}
+	
+	
 	@Given("^user is on home page$")
 	public void user_is_on_home_page() throws Throwable {
 		
